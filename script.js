@@ -17,7 +17,7 @@ function calcLuiz() {
     } else if (difference > 0 && difference < 86400000) {
         timerLuiz.innerText = "é hoje"
     } else {
-        timerLuiz.innerText = `${days} dias`
+        timerLuiz.innerText = `${days} dia(s)`
     }
 }
 
@@ -31,7 +31,7 @@ function calcPedro() {
     } else if (difference > 0 && difference < 86400000) {
         timerPedro.innerText = "é hoje"
     } else {
-        timerPedro.innerText = `${days} dias`
+        timerPedro.innerText = `${days} dia(s)`
     }
 }
 
@@ -45,7 +45,7 @@ function calcDaniel() {
     } else if (difference > 0 && difference < 86400000) {
         timerDaniel.innerText = "é hoje"
     } else {
-        timerDaniel.innerText = `${days} dias`
+        timerDaniel.innerText = `${days} dia(s)`
     }
 }
 
@@ -59,7 +59,7 @@ function calcRyan() {
     } else if (difference > 0 && difference < 86400000) {
         timerRyan.innerText = "é hoje"
     } else {
-        timerRyan.innerText = `${days} dias`
+        timerRyan.innerText = `${days} dia(s)`
     }
 }
 
@@ -73,7 +73,7 @@ function calcPaulo() {
     } else if (difference > 0 && difference < 86400000) {
         timerPaulo.innerText = "é hoje"
     } else {
-        timerPaulo.innerText = `${days} dias`
+        timerPaulo.innerText = `${days} dia(s)`
     }
 }
 
@@ -87,7 +87,7 @@ function calcBia() {
     } else if (difference > 0 && difference < 86400000) {
         timerBia.innerText = "é hoje"
     } else {
-        timerBia.innerText = `${days} dias`
+        timerBia.innerText = `${days} dia(s)`
     }
 }
 
@@ -101,7 +101,7 @@ function calcOsmar() {
     } else if (difference > 0 && difference < 86400000) {
         timerOsmar.innerText = "é hoje"
     } else {
-        timerOsmar.innerText = `${days} dias`
+        timerOsmar.innerText = `${days} dia(s)`
     }
 }
 
@@ -113,4 +113,4 @@ var timeCalcInterval = setInterval(function () {
     calcPaulo()
     calcBia()
     calcOsmar()
-}, 1000);
+}, 100);
