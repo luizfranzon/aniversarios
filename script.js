@@ -6,7 +6,7 @@ const birthdayDaniel = new Date(`aug 17, ${actualYear} 00:00:00`).getTime();
 const birthdayRyan =   new Date(`apr 17, ${actualYear} 00:00:00`).getTime();
 const birthdayPaulo =  new Date(`dec 25, ${actualYear} 00:00:00`).getTime();
 const birthdayBia =    new Date(`may 25, ${actualYear} 00:00:00`).getTime();
-const birthdayOsmar =  new Date(`aug 05, ${actualYear} 00:00:00`).getTime();
+const birthdayOsmar =  new Date(`nov 25, ${actualYear} 00:00:00`).getTime();
 
 function calcLuiz() {
     var now = new Date().getTime();
