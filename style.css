@@ -54,11 +54,10 @@ main {
     font-family: "Roboto", sans-serif;
     color: white;
     font-weight: bolder;
+    text-decoration: underline;
 
-    font-size: 25px;
+    font-size: 1.5625rem;
 
-    position: relative;
-    z-index: 1;
 }
 
 .timer {
@@ -66,9 +65,6 @@ main {
     color: white;
     font-weight: bolder;
 
-    position: static;
-    z-index: 0;
-    margin-top: 30px;
 
     font-size: 2.5rem;
 }
@@ -77,6 +73,9 @@ main {
     .timerBox {
         width: 250px;
         height: 180px;
+    }
+    .timer {
+        font-size: 2.1rem;
     }
 }
 
@@ -89,8 +88,13 @@ main {
         height: 150px;
     }
     body {
-        padding: 10vh;
         align-items: flex-start;
+    }
+    .row1 {
+        margin-top: 100px;
+    }
+    .row2 {
+        margin-bottom: 100px;
     }
     .timer {
         font-size: 30px;
