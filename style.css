@@ -85,9 +85,15 @@ main {
         flex-direction: column;
     }
     .timerBox {
-        width: 50vw
+        width: 80vw;
+        height: 150px;
     }
     body {
-        margin-block: 500px
+        padding: 10vh;
+        align-items: flex-start;
     }
+    .timer {
+        font-size: 30px;
+    }
+
 }
