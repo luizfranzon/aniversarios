@@ -7,6 +7,7 @@ const birthdayRyan =   new Date(`apr 17, ${actualYear} 00:00:00`).getTime();
 const birthdayPaulo =  new Date(`dec 25, ${actualYear} 00:00:00`).getTime();
 const birthdayBia =    new Date(`may 25, ${actualYear} 00:00:00`).getTime();
 const birthdayOsmar =  new Date(`nov 25, ${actualYear} 00:00:00`).getTime();
+const birthdayNov =    new Date(`mar 04, ${actualYear} 00:00:00`).getTime();
 
 function calcLuiz() {
     var now = new Date().getTime();
@@ -104,6 +105,19 @@ function calcOsmar() {
         timerOsmar.innerText = `${days} dia(s)`
     }
 }
+function calcNov() {
+    var now = new Date().getTime();
+    let difference = birthdayNov - now 
+    var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
+
+    if (difference < 0) {
+        timerNov.innerText = "Já passou"
+    } else if (difference > 0 && difference < 86400000) {
+        timerNov.innerText = "é hoje"
+    } else {
+        timerNov.innerText = `${days} dia(s)`
+    }
+}
 
 var timeCalcInterval = setInterval(function () {
     calcLuiz()
@@ -113,4 +127,5 @@ var timeCalcInterval = setInterval(function () {
     calcPaulo()
     calcBia()
     calcOsmar()
+    calcNov()
 }, 100);
