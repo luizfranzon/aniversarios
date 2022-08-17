@@ -1,13 +1,13 @@
 let actualYear = new Date().getFullYear()
 
 const birthdayLuiz =   new Date(`aug 05, ${actualYear} 23:59:59`).getTime();
-const birthdayPedro =  new Date(`dec 31, ${actualYear} 00:00:00`).getTime();
-const birthdayDaniel = new Date(`aug 17, ${actualYear} 00:00:00`).getTime();
-const birthdayRyan =   new Date(`apr 17, ${actualYear} 00:00:00`).getTime();
-const birthdayPaulo =  new Date(`dec 25, ${actualYear} 00:00:00`).getTime();
-const birthdayBia =    new Date(`may 25, ${actualYear} 00:00:00`).getTime();
-const birthdayOsmar =  new Date(`nov 25, ${actualYear} 00:00:00`).getTime();
-const birthdayNov =    new Date(`mar 04, ${actualYear} 00:00:00`).getTime();
+const birthdayPedro =  new Date(`dec 31, ${actualYear} 23:59:59`).getTime();
+const birthdayDaniel = new Date(`aug 17, ${actualYear} 23:59:59`).getTime();
+const birthdayRyan =   new Date(`apr 17, ${actualYear} 23:59:59`).getTime();
+const birthdayPaulo =  new Date(`dec 25, ${actualYear} 23:59:59`).getTime();
+const birthdayBia =    new Date(`may 25, ${actualYear} 23:59:59`).getTime();
+const birthdayOsmar =  new Date(`nov 25, ${actualYear} 23:59:59`).getTime();
+const birthdayNov =    new Date(`mar 04, ${actualYear} 23:59:59`).getTime();
 
 function calcLuiz() {
     var now = new Date().getTime();
@@ -40,7 +40,7 @@ function calcDaniel() {
     var now = new Date().getTime();
     let difference = birthdayDaniel - now 
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
-
+    
     if (difference < 0) {
         timerDaniel.innerText = "Já passou"
     } else if (difference > 0 && difference < 86400000) {
