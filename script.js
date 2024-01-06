@@ -1,17 +1,18 @@
 let actualYear = new Date().getFullYear()
 
-const birthdayLuiz =   new Date(`aug 05, ${actualYear} 23:59:59`).getTime();
-const birthdayPedro =  new Date(`dec 31, ${actualYear} 23:59:59`).getTime();
+const birthdayLuiz = new Date(`aug 05, ${actualYear} 23:59:59`).getTime();
+const birthdayPedro = new Date(`dec 31, ${actualYear} 23:59:59`).getTime();
 const birthdayDaniel = new Date(`aug 17, ${actualYear} 23:59:59`).getTime();
-const birthdayRyan =   new Date(`apr 17, ${actualYear} 23:59:59`).getTime();
-const birthdayPaulo =  new Date(`dec 25, ${actualYear} 23:59:59`).getTime();
-const birthdayBia =    new Date(`may 25, ${actualYear} 23:59:59`).getTime();
-const birthdayOsmar =  new Date(`nov 25, ${actualYear} 23:59:59`).getTime();
-const birthdayNov =    new Date(`mar 04, ${actualYear} 23:59:59`).getTime();
+const birthdayRyan = new Date(`apr 17, ${actualYear} 23:59:59`).getTime();
+const birthdayPaulo = new Date(`dec 25, ${actualYear} 23:59:59`).getTime();
+const birthdayBia = new Date(`may 25, ${actualYear} 23:59:59`).getTime();
+const birthdayOsmar = new Date(`nov 25, ${actualYear} 23:59:59`).getTime();
+const birthdayNov = new Date(`mar 04, ${actualYear} 23:59:59`).getTime();
+const birthdayXimbas = new Date(`nov 16, ${actualYear} 23:59:59`).getTime();
 
 function calcLuiz() {
     var now = new Date().getTime();
-    let difference = birthdayLuiz - now 
+    let difference = birthdayLuiz - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
     if (difference < 0) {
         timerLuiz.innerText = "Já passou"
@@ -24,7 +25,7 @@ function calcLuiz() {
 
 function calcPedro() {
     var now = new Date().getTime();
-    let difference = birthdayPedro - now 
+    let difference = birthdayPedro - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
 
     if (difference < 0) {
@@ -38,9 +39,9 @@ function calcPedro() {
 
 function calcDaniel() {
     var now = new Date().getTime();
-    let difference = birthdayDaniel - now 
+    let difference = birthdayDaniel - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
-    
+
     if (difference < 0) {
         timerDaniel.innerText = "Já passou"
     } else if (difference > 0 && difference < 86400000) {
@@ -52,7 +53,7 @@ function calcDaniel() {
 
 function calcRyan() {
     var now = new Date().getTime();
-    let difference = birthdayRyan - now 
+    let difference = birthdayRyan - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
 
     if (difference < 0) {
@@ -66,7 +67,7 @@ function calcRyan() {
 
 function calcPaulo() {
     var now = new Date().getTime();
-    let difference = birthdayPaulo - now 
+    let difference = birthdayPaulo - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
 
     if (difference < 0) {
@@ -80,7 +81,7 @@ function calcPaulo() {
 
 function calcBia() {
     var now = new Date().getTime();
-    let difference = birthdayBia - now 
+    let difference = birthdayBia - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
 
     if (difference < 0) {
@@ -94,7 +95,7 @@ function calcBia() {
 
 function calcOsmar() {
     var now = new Date().getTime();
-    let difference = birthdayOsmar - now 
+    let difference = birthdayOsmar - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
 
     if (difference < 0) {
@@ -107,7 +108,7 @@ function calcOsmar() {
 }
 function calcNov() {
     var now = new Date().getTime();
-    let difference = birthdayNov - now 
+    let difference = birthdayNov - now
     var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
 
     if (difference < 0) {
@@ -116,6 +117,19 @@ function calcNov() {
         timerNov.innerText = "é hoje"
     } else {
         timerNov.innerText = `${days} dia(s)`
+    }
+}
+function calcXimbas() {
+    var now = new Date().getTime();
+    let difference = birthdayXimbas - now
+    var days = Math.floor((difference) / (1000 * 60 * 60 * 24));
+
+    if (difference < 0) {
+        timerXimbas.innerText = "Já passou"
+    } else if (difference > 0 && difference < 86400000) {
+        timerXimbas.innerText = "é hoje"
+    } else {
+        timerXimbas.innerText = `${days} dia(s)`
     }
 }
 
@@ -128,4 +142,5 @@ var timeCalcInterval = setInterval(function () {
     calcBia()
     calcOsmar()
     calcNov()
+    calcXimbas()
 }, 100);
